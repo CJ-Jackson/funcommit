@@ -20,9 +20,12 @@ func main() {
 		"lv": "🇱🇻",
 		"fr": "🇫🇷",
 		"hu": "🇭🇺",
+		"zw": "🇿🇼",
 
-		"burger": "🍔",
-		"taco":   "🌮",
+		"burger":    "🍔",
+		"taco":      "🌮",
+		"banana":    "🍌",
+		"croissant": "🥐",
 	}
 
 	emoji := emos[strings.ToLower(os.Args[1])]
