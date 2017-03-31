@@ -26,9 +26,15 @@ func main() {
 		"taco":      "🌮",
 		"banana":    "🍌",
 		"croissant": "🥐",
+		"fries":     "🍟",
+
+		"unicorn": "🦄",
+		"monkey":  "🐒",
+		"cat":     "😾",
+		"goat":    "🐐",
 	}
 
-	emoji := emos[strings.ToLower(os.Args[1])]
+	emoji := emos[strings.ToLower(strings.TrimSpace(os.Args[1]))]
 	message := fmt.Sprintf("%s %s %s", emoji, os.Args[2], emoji)
 
 	cmd := exec.Command("git", "commit", "-m", message)
