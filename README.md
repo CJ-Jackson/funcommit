@@ -1,5 +1,7 @@
 # Funcommit
 
+Make github commit message look less boring.
+
 Usage
 
 ```sh
